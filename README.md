@@ -1,17 +1,28 @@
-# Malaika Asghar — Art Portfolio
+# Malaika Asghar — React + Tailwind Portfolio
 
-Responsive React and Three.js portfolio with artwork filters, a full-screen gallery, artist biography, education, downloadable CV, contact links and animated introduction.
+Built with React, Vite, Tailwind CSS and Three.js. Custom CSS supplies the detailed artwork composition and animation effects alongside Tailwind utilities.
 
-## Run locally
+## Local development
 
-1. Install Node.js and Python.
-2. Run `npm install`.
-3. Run `npm run build`.
-4. Run `python -m http.server 5173 --directory dist`.
-5. Open http://localhost:5173.
+```sh
+npm install
+npm run dev
+```
 
-After editing `src.jsx`, rebuild. Styles are in `dist/style.css`; artwork and CV assets are in `dist/assets`.
+Open the localhost URL printed by Vite. Source edits refresh automatically.
 
-Deploy the `dist` directory to a static website host. The `.openai/hosting.json` file records the existing Sites deployment configuration.
+## Source files
 
-The decorative studio mood image is AI-generated and labeled separately from Malaika's original artwork.
+- `src/App.jsx`: React sections, gallery and Three.js motion
+- `src/main.jsx`: React entry point
+- `src/index.css`: Tailwind directives and custom styles
+- `public/assets/`: paintings, artist portrait and CV
+- `tailwind.config.js`: Tailwind theme and source scanning
+
+## Deploy on Vercel
+
+Import the GitHub repository. Select **Vite**, keep Root Directory empty (repository root), Build Command `npm run build`, and Output Directory `dist`. No environment variables are needed. `vercel.json` includes these settings.
+
+`npm run build` generates production assets in `dist`. `npm run preview` serves that production build locally.
+
+The generated decorative studio studies are labeled separately from the original artworks.

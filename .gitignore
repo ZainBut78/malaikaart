@@ -4,3 +4,6 @@ update.py
 refine.py
 polish.py
 update-skills.py
+dist/
+migrate.py
+.vercel/
